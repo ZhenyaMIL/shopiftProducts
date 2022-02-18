@@ -1,0 +1,27 @@
+{% for tag in card_product.tags %}
+
+{% if tag contains 'stress' %}
+  {% render 'stress-icon' %}
+{% endif %}
+
+{% if tag contains 'immunity' %}
+  {% render 'immunity-icon' %}
+{% endif %}
+
+{% if tag contains 'mobility' %}
+  {% render 'mobility-icon' %}
+{% endif %}
+
+{% if tag contains 'heart' %}
+    {% render 'heart-icon' %}
+{% endif %}
+
+{% if tag contains 'energy' %}
+    {% render 'energy-icon' %}
+{% endif %}
+
+{% if tag contains 'brain' %}
+    {% render 'brain-icon' %}
+{% endif %}
+
+{% endfor %}

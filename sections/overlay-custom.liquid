@@ -1,0 +1,17 @@
+<!-- <div class="custom_overlay">
+    <img src="{{ section.settings.custom_overlay | img_url: '550x' }}" alt="{{ section.settings.custom_overlay.alt }}" loading="lazy">
+</div> -->
+
+{% schema %}
+{
+  "name": "Custom overlay",
+  "settings": [
+  {
+    "type": "image_picker",
+    "id": "custom_overlay",
+    "label": "Custom overlay"
+  }
+
+  ]
+}
+{% endschema %}
